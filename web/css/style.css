@@ -1,0 +1,6 @@
+.background-home {
+    background-image: url("../web/img/natureza.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

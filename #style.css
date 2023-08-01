@@ -1,6 +1,31 @@
-background-home {
-    background-image: url("../img/natureza-sebastian-unrau-unsplash-1024x464.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.background-home {
+    background-color: aliceblue;
+   
+}
+
+.form-group {
+    color: white;
+}
+
+.btn{
+    margin: 15px;
+    margin: 100px;
+}
+@media screen and(max-width: 768px) {
+    .container{
+        display: block;
+        background-image: none;
+
+    }
+    .container imagem {
+        width: 100vw;
+        margin: 2em 2em;
+    }
+    .secundario{
+        margin: 0%;
+        text-align: center; 
+    }
+    .secundario_imagem {
+        width: 50vw;
+    }
 }

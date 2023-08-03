@@ -4,44 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página inicial</title>
+  <title>Página inicial - Rodas do Sol</title>
+  <link rel="icon" href="web/img/icone.ico" type="image/x-icon">
+
   <link rel="stylesheet" href="web/css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<header class="p-3">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 d-flex">
+        <button class="btn btn-outline-secondary mr-2">A+</button>
+        <button class="btn btn-outline-secondary mr-2">A-</button>
+        <button class="btn btn-outline-secondary">Contraste</button>
+      </div>
+      <div class="col-md-6 d-flex justify-content-end align-items-center">
+        <a href="login.html" class="btn btn-outline-secondary mr-2">Login</a>
+        <a href="cadastre-se.html" class="btn btn-success mr-2">Cadastre-se</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <img src="web/img/logotipo.png" alt="Logo RotaRadiante" class="img-fluid" style="max-width: 100px;">
+      </div>
+    </div>
+  </div>
+</header>
 
 <body>
-  <header class="bg-success p-3">
-    <h2 class="text-center text-light">Check-in na Mata </h2>
-  </header>
-
-  <ul class="nav  d-flex justify-content-center shadow-sm">
-    <li class="nav-item">
-      <a class="nav-link active text-success" href="index.html">início</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark" href="ofertas.html">ofertas</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark" href="pacotes.html">pacotes</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-dark" href="contatos.html">contatos</a>
-    </li>
-  </ul>
-  <div id="carouselExampleIndicators" class="carousel slide w-2" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-        aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-        aria-label="Slide 5"></button>
-    </div>
+  <nav>
+    <ul class="nav  d-flex justify-content-center shadow-sm bg-success">
+      <li class="nav-item">
+        <a class="nav-link active text-light font-weight-bold" href="index.html">início</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="ofertas.html">ofertas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="pacotes.html">pacotes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="contatos.html">contatos</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="web/img/penedo rjj.png" class="d-block w-100" alt="Penedo">
@@ -52,121 +59,134 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="web/img/ilha de guaratiba.jpg" class="d-block w-100" alt="Ilha de Guaratiba">
+        <img src="web/img/guaratiba.png" class="d-block w-100" alt="Ilha de Guaratiba">
         <div class="carousel-caption d-none d-md-block">
           <h5>Ilha de Guaratiba</h5>
           <p>A Ilha de Guaratiba é um lugar tranquilo, bastante rural e lembra uma cidade de interior. A natureza tem
             levado muitos cariocas que buscam um estilo de vida mais calmo a buscar esse bairro.</p>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="web/img/Capa-Angra.jpg" class="d-block w-100" alt="Angra dos Reis">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Angra dos Reis</h5>
-          <p>Angra dos Reis é um município brasileiro no estado de Rio de Janeiro, a sudoeste. É composto por 365 ilhas
-            e um pequeno porto rodeado por uma linha costeira íngreme e arborizada. A região é conhecida pelas suas
-            inúmeras praias e pela biodiversidade da Ilha Grande, a maior ilha.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="web/img/1-Camara-de-Petropolis (1).webp" class="d-block w-100" alt="Petropolis">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Petropolis</h5>
-          <p>Petrópolis é uma cidade brasileira a norte do Rio de Janeiro. Delimitada pelo Parque Nacional da Serra dos
-            Órgãos, com os seus picos arborizados e quedas de água, é conhecida como um retiro de montanha imperial.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="web/img/paraty.jpg" class="d-block w-100" alt="Paraty">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Paraty</h5>
-          <p>Paraty é uma cidade costeira do estado do Rio de Janeiro, no Brasil. É conhecida pelo centro histórico, com
-            ruas de pedra e casas coloniais, muitas das quais agora são pousadas, restaurantes e lojas.</p>
-        </div>
-      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-      data-bs-slide="next">
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <section class="background-home p-4">
-    <h1 class="text-center mt-3 mb-3">Encontre seu proximo destino</h1>
 
+  <section class="background-home p-4">
+    <h1 class="text-center mt-3 mb-3">Encontre seu próximo destino</h1>
     <form>
       <div class="row justify-content-center align-items-center">
         <div class="form-group col-md-4">
-          <label for="inputEmail4">Origem</label>
+          <label for="inputOrigem">Origem</label>
           <input type="text" class="form-control" id="inputOrigem" placeholder="Origem">
         </div>
         <div class="form-group col-md-4">
-          <label for="inputPassword4">Destino</label>
+          <label for="inputDestino">Destino</label>
           <input type="text" class="form-control" id="inputDestino" placeholder="Destino">
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="form-group col-md-4">
           <label for="inputAddress">Data da ida</label>
-          <input type="date" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+          <input type="date" class="form-control" id="inputAddress">
         </div>
         <div class="form-group col-md-4">
           <label for="inputAddress">Data da volta</label>
-          <input type="date" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+          <input type="date" class="form-control" id="inputAddress">
         </div>
       </div>
       <div class="row justify-content-center mt-3 mb-3">
-        <div class="form-group col-md-8 mt-2"> <button type="submit"
-            class="btn bg-success w-100 text-light">Buscar</button></div>
+        <div class="form-group col-md-8 mt-2">
+          <button type="submit" class="btn bg-success w-100 text-light">Buscar</button>
+        </div>
       </div>
     </form>
   </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-4J6D9W5+0X1z4yJhsJXiJy+BWidx3eJ4y4Ck4SOF4y4Ck4C2DgHfViXydVeLm+JDM"
-    crossorigin="anonymous"></script>
-</body>
-<div class="p-4 bg-light mt-5">
-  <h4 class="text-center">Inscreva-se para receber ofertas exclusivas</h4>
-  <form class="row justify-content-center">
-      <div class="form-group row justify-content-center mt-3">
-          <div class="col-lg-6 col-md-8 col-sm-12">
-              <input type="text" class="form-control" id="inputemail" placeholder="Insira seu e-mail">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+  <div class="p-4 bg-light mt-5 text-center">
+    <h4>Inscreva-se para receber ofertas exclusivas</h4>
+    <form class="d-flex flex-column align-items-center">
+      <div class="form-group d-flex justify-content-center mt-3 col-lg-6 col-md-8 col-sm-12">
+        <input type="text" class="form-control" id="inputemail" placeholder="Insira seu e-mail">
+      </div>
+      <button type="email" class="btn btn-outline-success w-25 mt-2">Quero recebê-las!</button>
+    </form>
+  </div>
+  <div id="reviewsCarousel" class="carousel slide bg-info text-light p-3" data-ride="carousel" data-interval="3000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <img src="web/img/user1.jpg" alt="User 1" class="rounded-circle mb-3" style="width: 100px;">
+            <h5>João Silva</h5>
+            <p>"A viagem foi incrível! Tudo foi perfeitamente organizado e a equipe foi super atenciosa. Recomendo!"</p>
           </div>
+        </div>
       </div>
-      <button type="button" class="btn btn-outline-success w-25 mt-4">Quero recebê-las!</button>
-  </form>
-</div>
-<footer class="bg-dark text-white">
-  <div class="container py-4">
-    <div class="row">
-      <div class="col-md-3">
-        <h5>Sobre</h5>
-        <p>Check-in na Mata</p>
-        <p>Desenvolvido por Juliana Pires</p>
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <img src="web/img/user2.jpg" alt="User 2" class="rounded-circle mb-3" style="width: 100px;">
+            <h5>Maria Oliveira</h5>
+            <p>"As acomodações eram confortáveis e os passeios eram divertidos. Uma experiência inesquecível!"</p>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3">
-        <h5>Contato</h5>
-        <p>Email: reserveja.mata@gmail.com</p>
-        <p>Telefone: (21)8752-8952</p>
-      </div>
-      <div class="col-md-3">
-        <h5>Meios de Pagamento</h5>
-        <img src="web/img/credito.jpg" alt="crédito">
-        <img src="web/img/boleto.jpg" alt="boleto">
-        <img src="web/img/cartao.jpg" alt="Pix">
-      </div>
-      <div class="col-md-3">
-        <h5>Selos</h5>
-        <img src="web/img/selo1.jpg" alt="pet friendly">
-        <img src="web/img/selo2.jpg" alt="boleto">
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <img src="web/img/user3.jpg" alt="User 3" class="rounded-circle mb-3" style="width: 100px;">
+            <h5>Carlos Pereira</h5>
+            <p>"Eu e minha família adoramos cada momento. A equipe fez um ótimo trabalho. Voltaremos em breve!"</p>
+          </div>
+        </div>
       </div>
     </div>
+    <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
   </div>
-</footer>
+  <footer class="bg-dark text-white">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Sobre</h5>
+          <p>Rodas do Sol</p>
+          <p>Desenvolvido por Juliana Pires</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Contato</h5>
+          <p>Email: reserveja.mata@gmail.com</p>
+          <p>Telefone: (21)8752-8952</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Meios de Pagamento</h5>
+          <img src="web/img/credito.jpg" alt="crédito">
+          <img src="web/img/boleto.jpg" alt="boleto">
+          <img src="web/img/cartao.jpg" alt="Pix">
+        </div>
+        <div class="col-md-3">
+          <h5>Selos</h5>
+          <img src="web/img/selo1.jpg" alt="pet friendly">
+          <img src="web/img/selo2.jpg" alt="boleto">
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </html>

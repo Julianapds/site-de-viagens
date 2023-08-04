@@ -1,13 +1,3 @@
-# Rotas do Sol - Site de Viagens
-Rotas do Sol é um site de viagens desenvolvido com HTML, CSS e Bootstrap. Ele foi feito para aplicar meus conhecimentos nestas tecnologias. Acesse o site através do link https://check-in-na-mata.netlify.app/.
-
-![Alt text](web/img/foto.jpg)
-
-
-### Atividade pseudocodigo
-Usando conceitos de programação estruturada (Vetor), criar em pseudocódigo um menu para simular um cadastro para uma agência de viagens com as seguintes funções: cadastro de cliente e cadastro de destino, criar também uma consulta para cada estrutura de dados.
-
-```
 Algoritmo "CadastroDeClientes"
 Var
   NomesClientes, Telefones, Emails: vetor[1..3] de caractere
@@ -25,7 +15,7 @@ Inicio
     EscrevaL("5 - Consultar destinos")
     EscrevaL("6 - Consultar destino por ID")
     EscrevaL("7 - Sair")
-    Escreva("Escolha uma opção: ")
+    Escreva("Escolha uma op��o: ")
     Leia(opcao)
     Escolha opcao
       caso 1
@@ -81,6 +71,3 @@ Inicio
     FimEscolha
   FimEnquanto
 Fimalgoritmo
-```
-
-

@@ -13,13 +13,14 @@
 <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+        <div class="vw-plugin-top-wrapper"></div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+</script>
+
 <body>
     <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
     <div class="container d-flex justify-content-center text-center mt-4">
@@ -33,6 +34,8 @@
             <input type="password" id="inputPassword" class="form-control mb-2" placeholder="Senha" required=""
                 pb-role="password">
             <button onclick="handleLogin()" class="btn btn-lg btn-success btn-block w-100 mt-2 mb-3">Entrar</button>
+            <li class="nav-item">
+                        <a class="nav-link" href="#reservas">Minhas Reservas</a>
 
             <div class="row p-0">
                 <p>Ainda não tem cadastro? <a href="cadastro.html">Clique aqui</a></p>
@@ -48,10 +51,10 @@
         function handleLogin() {
             const email = document.getElementById('inputEmail').value;
 
-            if (email === 'candidato@email.com') {
+            if (email === 'cliente@email.com') {
                 window.location.href = 'dashboard_candidato.html';
-            } else if (email === 'recrutador@email.com') {
-                window.location.href = 'dashboard_recrutador.html';
+            } else if (email === 'cliente@email.com') {
+                window.location.href = 'dashboard_cliente.html';
             } else {
                 alert('Email não reconhecido.');
             }

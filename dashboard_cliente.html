@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço cliente</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="bg-success text-white text-center py-3">
+        <h1>Minhas reservas</h1>
+        <p>Bem-vindo, Anna Claudia!</p>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#perfil">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservas">Minhas Reservas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ofertas">Ofertas Especiais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sair">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <section id="perfil">
+            <h2>Seu Perfil</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Nome:</strong> Anna Claudia Martins</p>
+                    <p><strong>Email:</strong> anna.claudia@gmail.com</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>Telefone:</strong>21 982536979</p>
+                    <p><strong>Endereço:</strong>Recreio dos Bandeirantes</p> 
+                </div>
+            </div>
+        </section>
+
+        <section id="reservas" class="mt-4">
+            <h2>Minhas Reservas</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Reserva 1</h5>
+                            <p class="card-text">Fortaleza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Reserva 2</h5>
+                            <p class="card-text">Ilha de Guaratiba</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Reserva 3</h5>
+                            <p class="card-text">Gramado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="mt-4">
+            <h2>Ofertas Especiais</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Oferta Especial 1</h5>
+                            <p class="card-text">Tranfer e ingressos </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Oferta Especial 2</h5>
+                            <p class="card-text">transfer e passeio de trem</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Oferta Especial 3</h5>
+                            <p class="card-text">tranfer e turismo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="configuracoes" class="mt-4">
+            <h2>Configurações da Conta</h2>
+            <form>
+                <div class="form-group">
+                    <label for="novo-email">Novo Email:</label>
+                    <input type="email" class="form-control" id="novo-email" name="novo-email">
+                </div>
+                <div class="form-group">
+                    <label for="nova-senha">Nova Senha:</label>
+                    <input type="password" class="form-control" id="nova-senha" name="nova-senha">
+                </div>
+                <button type="submit" class="btn btn-success">Salvar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-success text-white text-center py-3 mt-4">
+        <p>&copy; 2023 Rotas do Sol</p>
+    </footer>
+</body>
+
+</html>

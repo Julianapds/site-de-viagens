@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-
 <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -34,11 +33,9 @@
             <input type="password" id="inputPassword" class="form-control mb-2" placeholder="Senha" required=""
                 pb-role="password">
             <button onclick="handleLogin()" class="btn btn-lg btn-success btn-block w-100 mt-2 mb-3">Entrar</button>
-            <li class="nav-item">
-                        <a class="nav-link" href="#reservas">Minhas Reservas</a>
 
             <div class="row p-0">
-                <p>Ainda não tem cadastro? <a href="cadastro.html">Clique aqui</a></p>
+                <a href="cadastro.html">Cadastra-se</a>
                 <a href="recuperacao-senha.html">Esqueci minha senha</a>
             </div>
             <p class="mt-5 mb-3 text-muted">© 2023-2023</p>
@@ -63,7 +60,23 @@
         }
     </script>
 </body>
-<script type="text/javascript" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    function handleLogin() {
+        const email = document.getElementById('inputEmail').value;
+        const senha = document.getElementById('inputPassword').value;
 
+        // Verifique se o email e a senha são válidos
+        if (email === 'julianapiresdasilva@gmail.com' && senha === '1234') {
+            // Redirecione para a página "minhas reservas.html" após o login bem-sucedido
+            window.location.href = 'minhas reservas.html';
+            return false; // Impede que o formulário seja enviado
+        } else {
+            alert('Credenciais inválidas. Tente novamente.');
+            return false; // Impede que o formulário seja enviado
+        }
+    }
+</script>
+
+<script type="text/javascript" src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 
 </html>

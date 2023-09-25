@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espaço cliente</title>
+    <title>Minhas Reservas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -116,19 +116,9 @@
                 </div>
             </div>
         </section>
-
-        <section id="configuracoes" class="mt-4">
-            <h2>Configurações da Conta</h2>
-            <form>
-                <div class="form-group">
-                    <label for="novo-email">Novo Email:</label>
-                    <input type="email" class="form-control" id="novo-email" name="novo-email">
-                </div>
-                <div class="form-group">
-                    <label for="nova-senha">Nova Senha:</label>
-                    <input type="password" class="form-control" id="nova-senha" name="nova-senha">
-                </div>
-                <button type="submit" class="btn btn-success">Salvar</button>
+        <form class="d-flex justify-content-between">
+             <button type="submit" class="btn btn-success ml-2">Salvar</button>
+             <p><a href="login.html" class="btn btn-success">Sair</a></p>
             </form>
         </section>
     </main>
